@@ -2,30 +2,27 @@
  * LoadCellRead
  * Created for STORQUE and open source educational project
  * 
- * Team 
+ * Team 8
  * 
 */
 
-//pin to read from load cell
-const int sensorPin = A0;
-//value that will be read from load cell
-int sensorValue = 0;
+//must install 'HX711_ADC.h' library from library manager
+#include <HX711_ADC.h>
+
+const int clkPin = A1;
+const int dtPin = A2;
+HX711_ADC LoadCell(dtPin, clkPin);
 
 void setup() {
-
-  //set pin to input
-  pinMode(sensorPin, INPUT);
-
-  //set baud rate to 9600
   Serial.begin(9600);
+  Serial.println("Ready to begin");
+  LoadCell.begin();
+  //stabilizing value used in example by library author
+  long stabilisingtime = 2000;
+  LoadCell.start(stabilisingtime);
 }
 
 void loop() {
-
-  //delay by 10 milliseconds
-  delay(10);
-
-  //read voltage from pin and output to serial
-  sensorValue = analogRead(sensorPin);
-  Serial.write(sensorValue);
+  Serial.println(LoadCell.getData());
+ 
 }
