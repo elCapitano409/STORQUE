@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Threading;
+using System.IO.Ports;
 
 namespace HOpefullythisworks
 {
@@ -25,18 +26,32 @@ namespace HOpefullythisworks
         }
 
         private void getPerformanceCounters()
-
+            //object sender, System.IO.Ports.SerialDataReceivedEventArgs e
         {
+            SerialPort sp = new SerialPort("COM4", 9600, Parity.None, 8, StopBits.One);
+            try
+            {
+                sp.Open();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Checkport");
+                return;
+            }
+            
+                
 
-            var cpuPerfCounter = new PerformanceCounter("Processor Information", "% Processor Time", "_Total");
+            //var cpuPerfCounter = new PerformanceCounter("Processor Information", "% Processor Time", "_Total");
 
 
 
             while (true)
 
             {
-
-                cpuArray[cpuArray.Length - 1] = Math.Round(cpuPerfCounter.NextValue(), 0);
+                string data = sp.ReadExisting();
+                ;
+                cpuArray[cpuArray.Length - 1] = Convert.ToDouble(data);
+                    //Math.Round(cpuPerfCounter.NextValue(), 0);
 
 
 
