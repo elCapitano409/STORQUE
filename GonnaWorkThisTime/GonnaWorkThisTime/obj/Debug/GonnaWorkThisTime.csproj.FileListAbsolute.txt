@@ -1,0 +1,10 @@
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\bin\Debug\GonnaWorkThisTime.exe.config
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\bin\Debug\GonnaWorkThisTime.exe
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\bin\Debug\GonnaWorkThisTime.pdb
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.csprojAssemblyReference.cache
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.Form1.resources
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.Properties.Resources.resources
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.csproj.GenerateResource.cache
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.csproj.CoreCompileInputs.cache
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.exe
+C:\Users\Mark's pc\source\repos\GonnaWorkThisTime\GonnaWorkThisTime\obj\Debug\GonnaWorkThisTime.pdb
